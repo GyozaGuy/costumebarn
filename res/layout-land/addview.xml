@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Back" />
+
+    <LinearLayout
+        android:id="@+id/outline"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/imageIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher" />
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:id="@+id/infoContainer"
+                android:layout_width="580dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:text="Name: " />
+
+                <EditText
+                    android:id="@+id/editName"
+                    android:focusable="false"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/textType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:text="Type: " />
+
+                <RadioGroup
+                    android:id="@+id/radioGroupType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/radioWestern"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Western" />
+
+                    <RadioButton
+                        android:id="@+id/radioMedival"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Medieval" />
+
+                    <RadioButton
+                        android:id="@+id/radioFreaky"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Freaky" />
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/textSize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:text="Size: " />
+
+                <RadioGroup
+                    android:id="@+id/radioGroupSize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/radioXs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="XS" />
+
+                    <RadioButton
+                        android:id="@+id/radioS"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="S" />
+
+                    <RadioButton
+                        android:id="@+id/radioM"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="M" />
+
+                    <RadioButton
+                        android:id="@+id/radioL"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="L" />
+
+                    <RadioButton
+                        android:id="@+id/radioXl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="XL" />
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/textStorage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:text="Storage Unit Number: " />
+
+                <RadioGroup
+                    android:id="@+id/radioGroupStorage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/radioUnit1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="#1" />
+
+                    <RadioButton
+                        android:id="@+id/radioUnit2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="#2" />
+
+                    <RadioButton
+                        android:id="@+id/radioUnit3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="#3" />
+                    
+                    <RadioButton
+                        android:id="@+id/radioUnit4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="#4" />
+                    
+                    <RadioButton
+                        android:id="@+id/radioUnit5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="#5" />
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/textRating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:text="Rating: " />
+
+                <RatingBar
+                    android:id="@+id/ratingBar1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/textDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:text="Description: " />
+
+                <EditText
+                    android:id="@+id/editDescription"
+                    android:focusable="false"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine" />
+
+                <Button
+                    android:id="@+id/buttonAdd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Save Costume" />
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>
